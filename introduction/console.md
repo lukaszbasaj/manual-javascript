@@ -1,0 +1,1 @@
+> **Korzystanie z `console.log`**
