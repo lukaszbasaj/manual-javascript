@@ -1,29 +1,32 @@
-**WarsawJS Workshop #36 - wprowadzenie do JavaScript**
-> Typy, zmienne, operatory
+# Zadania — Typy, zmienne, operatory
 
 Przełącz się na branch `02-types-variables-operators`
 
-- Ćwiczenie 1:
-W w pliku `index.html` sekcji `<section class="types">` wypisz wszystkie poznane typy proste i referencyjne. 
+## Ćwiczenie 1
 
----
+W w pliku `index.html` sekcji `<section class="types">` wypisz wszystkie poznane
+typy proste i referencyjne.
 
-- Ćwiczenie 2:
+## Ćwiczenie 2
 
-W pliku `/js/main.js` stwórz zmienne każdego typu. Wypisz w konsoli ich typy. Spróbuj wykonać na nich proste działania dodawania, odejmowania, mnożenia i dzielenia.
+W pliku `/js/main.js` stwórz zmienne każdego typu. Wypisz w konsoli ich typy.
+Spróbuj wykonać na nich proste działania dodawania, odejmowania, mnożenia i dzielenia.
 
----
+## Ćwiczenie 3
 
-- Ćwiczenie 3:
-  
-  Masz przykładową zmienną:
-`let width = "20px";`
+Masz przykładową zmienną:
+
+```js
+let width = "20px";
+```
 
 Dodaj do niej wartość `30`. Wynik wypisz w konsoli.
 
----
+## Ćwiczenie 4
 
-- Ćwiczenie 4:
+Co zostanie wyświetlone w konsoli?
 
-Co zostanie wyświetlone w konsoli:
-`console.log((('b' + 'a' + + 'a' + 'a').toLowerCase()))`
+```js
+const str = ('b' + 'a' + + 'a' + 'a').toLowerCase();
+console.log(str);
+```

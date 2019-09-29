@@ -1,5 +1,4 @@
-> REST API
-
+# REST API
 
 **REST** – Representational State Transfer – styl architektury oprogramowania opierający się o zbiór wcześniej określonych reguł opisujących jak definiowane są zasoby, a także umożliwiających dostęp do nich. Został on zaprezentowany przez Roya Fieldinga w 2000 roku.
 
@@ -7,25 +6,27 @@
 
 Czyli API są to reguły określające jak użytkownik może uzyskać dostęp do zasobów oraz w jakiej postaci je otrzymuje. Natomiast REST to styl architektury definiujący jak zbudowane będzie to API.
 
-**Zasada działania API**
+## Zasada działania API
 
 Cykl pracy z API możemy określić następująco:
 
-Klient preparuje zapytanie w postaci odpowiedniego adresu (endpointa).
-Następnie wysyła to zapytanie do interfejsu.
-Interfejs zwraca odpowiedź na zapytanie klienta.
-Klient otrzymuje odpowiedź na swoje zapytanie.
-Dla wielu osób to, co napisałem może się wydawać oczywiste. Chciałbym jednak, aby KAŻDY po przeczytaniu tego artykułu wiedział do czego służy API.
+* Klient preparuje zapytanie w postaci odpowiedniego adresu (endpointa).
+* Następnie wysyła to zapytanie do interfejsu.
+* Interfejs zwraca odpowiedź na zapytanie klienta.
+* Klient otrzymuje odpowiedź na swoje zapytanie.
+* Dla wielu osób to, co napisałem może się wydawać oczywiste. Chciałbym jednak,
+    aby KAŻDY po przeczytaniu tego artykułu wiedział do czego służy API.
 
-Do zbudowania podstawowego API pozwalającego na odczyt, zapis, aktualizację i usuwanie danych wystarczą tylko 4 metody – GET, POST, PUT i DELETE.
+Do zbudowania podstawowego API pozwalającego na odczyt, zapis, aktualizację
+i usuwanie danych wystarczą tylko 4 metody – GET, POST, PUT i DELETE.
 
-- GET — pobieranie (zarówno kolekcji, jak i pojedynczego elementu)
-- POST — tworzenie (tylko kolekcji)
-- PUT — aktualizacja (tylko pojedynczego elementu)
-- DELETE — usuwanie (tylko pojedynczego elementu)
+* GET — pobieranie (zarówno kolekcji, jak i pojedynczego elementu)
+* POST — tworzenie (tylko kolekcji)
+* PUT — aktualizacja (tylko pojedynczego elementu)
+* DELETE — usuwanie (tylko pojedynczego elementu)
 
+## Zasady tworzące REST
 
-**Zasady tworzące REST**
 Aby API można nazwać RESTful lub API RESTowym musi ono spełniać kilka założeń:
 
 - Odseparowanie interfejsu użytkownika od operacji na serwerze. Klient poprzez “wydawanie poleceń” nie ma wpływu na to co się dzieje po stronie serwera. Działa to również w drugą stronę – serwer daje klientowi jedynie odpowiedź i nie ma prawa ingerować w UI. Pozwala to na korzystanie z jednego REST API w wielu niezależnych od siebie aplikacjach, a dane pozostaną spójne.
@@ -40,8 +41,7 @@ Możliwość udostępniania apletów i skryptów klientowi – jest to opcjonaln
 
 - Możliwość udostępniania apletów i skryptów klientowi – jest to opcjonalna reguła, aczkolwiek warto rozważyć jej zastosowanie. Jeśli wiemy, że klienci będą wykonywać konkretne operacje na konkretnych danych możemy im udostępnić gotowe do tego rozwiązania.
 
-
-**Jakie są zalety korzystania z REST API?**
+## Jakie są zalety korzystania z REST API?
 
 Korzystanie z tego rozwiązania ma swoje zalety – gdyby nie miało to nikt by tego nie używał, oraz nie pisałbym tego artykułu.
 
