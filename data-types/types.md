@@ -1,30 +1,29 @@
-> Typy wartości
+# Typy wartości
 
-Najnowszy standard ECMAScript definiuje siedem typów danych:
+Standard ECMAScript definiuje siedem typów danych:
 
 Sześć *typów prostych* (primitives):
+
 - **Boolean**. `true` oraz `false`.
-
 - **Number**. `42` lub `3.14159`.
-
 - **String**. `"Siemanko"`
-
-- **Symbol** (nowość w ECMAScript 6). Typ danych, gdzie przykłady są niepowtarzalne i niezmienne.
+- **Symbol** (nowość w ECMAScript 6). Typ danych, gdzie przykłady
+    są niepowtarzalne i niezmienne.
 
 Z czego dwie poniższe nie mogą przechowywać wartości:
-- **null**. Specjalne słowo kluczowe oznaczające wartość zerową. Ponieważ w języku JavaScript rozróżniana jest wielkość liter, `null` nie jest tym samym co Null, NULL lub jakikolwiek inny wariant.
 
+- **null**. Specjalne słowo kluczowe oznaczające wartość zerową.
+    Ponieważ w języku JavaScript rozróżniana jest wielkość liter,
+    `null` nie jest tym samym co Null, NULL lub jakikolwiek inny wariant.
 - **undefined**. Najwyższa właściwość, której wartość jest nieokreślona.
 
-
 Oraz *typ złożony* (composite):
-- **Object** (do którego można również zaliczyć podtypy functions i array)
 
+- **Object** (do którego można również zaliczyć podtypy functions i array)
 
 Do sprawdzenia typu danych korzystamy z instrukcji `typeof`:
 
-
-```
+```js
 const num = 10;
 const str = 'przykładowy tekst';
 const arr = [];
@@ -39,15 +38,15 @@ console.log( typeof arr ); //"object" hmm?
 console.log( typeof obj ); //"object"
 console.log( typeof und ); //"undefined"
 console.log( typeof nul ); //"object" hmm?
-
 ```
 
-**Automatyczna konwersja typów**
+## Automatyczna konwersja typów
 
-JavaScript nie wymaga od Ciebie abyś deklarował typ zmiennych. Przykładowo możesz utworzyć zmienną typu liczbowego o nazwie np. someVar, a następnie przypisać jej wartość znakową:
+JavaScript nie wymaga od Ciebie abyś deklarował typ zmiennych. Przykładowo możesz
+utworzyć zmienną typu liczbowego o nazwie np. someVar, a następnie przypisać
+jej wartość znakową:
 
-
-```
+```js
 let someVar = 10;
 someVar = "to jest napis";
 ```
@@ -61,7 +60,7 @@ JavaScript nie jest w stanie dodać do siebie tablic czy obiektów (bo nie robi 
 
 Poniżej zamieszczam przykłady konwersji, które w rezultacie dają string. Żeby je sprawdzić realnie, możesz wpisać je w konsoli debugera.
 
-```
+```js
 "kot" + "kot" //"kotkot"
 20 + 1  //21
 "20" + 1  //"201"
@@ -77,19 +76,17 @@ Poniżej zamieszczam przykłady konwersji, które w rezultacie dają string. Że
 "23" + [1,2,3] + {} + true + false + !true  //"231,2,3[object Object]truefalsefalse"
 ```
 
-**Manualna konwersja na liczby**
+## Manualna konwersja na liczby
 
 W przypadku dodawania typów złożonych (tablice, obiekty) raczej nie będziemy chcieli wykonywać operacji takich jak powyżej.
 W przypadku dokonywania do siebie kilku liczb chcielibyśmy mieć pewność, że dane zmienne są liczbami, a nie stringiem.
 Żeby dokonać takiej konwersji, skorzystamy z jednej z dostępnych do tego metod:
 
-```
+```js
 Number(str); //konwertuje tekst na liczbę
 
 parseInt(str, system_liczbowy); //parsuje tekst na liczbę całkowitą
 parseFloat(str); //parsuje tekst na liczbę
 ```
 
-*źródło*: [Mozilla Developer Network](https://developer.mozilla.org)
-
----
+Źródło: [Mozilla Developer Network](https://developer.mozilla.org)

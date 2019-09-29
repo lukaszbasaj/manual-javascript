@@ -1,24 +1,18 @@
-> Tablice
+# Tablice
 
-Tablice są to uporządkowane zbiory zawierające dane. 
+Tablice są to uporządkowane zbiory zawierające dane.
 
-
->> Tworzenie tablic
+## Tworzenie tablic
 
 Aby stworzyć nową tablicę korzystamy z `literału tablicowego` (nawiasów kwadratowych):
 
-```
+```js
 const table = []; //pusta tablica
-
 const tableWithNumbers = [1, 2, 3]; //tablica z 3 liczbami
-
 const tableWithStrings = ['Luke Skywalker', 'Darth Vader', 'Leia Organa']; //tablica z 3 elementami
-
 ```
 
-
-
-```
+```js
 const a = "Han Solo";
 const b = 234;
 const c = "CHEWBACCA";
@@ -34,22 +28,24 @@ Elementy tablicy numerujemy zaczynając od `0`:
 
 Pierwsza wartość w tablicy ma index `0`, druga `1`, trzecia `2` i tak dalej, aż do ostatniego indeksu który wynosi `długość_tablicy-1 `czyli `tab.length-1`.
 
-
 Tablicę można też stworzyć przy użyciu funkcji konstruktora:
 
-```
+```js
 const arr = new Array(1, 2, 3, 4);
 ```
+
 Odkładając na bok estetykę, musisz pamiętać o kilku subtelnych szczegółach podczas korzystania z konstruktora tablic. Ponieważ Array jest zmienną globalną, można ją zmodyfikować gdzie indziej w skrypcie, więc może nie działać zgodnie z oczekiwaniami.
 
+```js
+Array = String;
+const arr = new Array(1, 2, 3, 4); // "1"
 ```
-Array = String; 
-const arr = new Array(1, 2, 3, 4); // "1" 
-```
+
 Innym problemem jest to, że jeśli konstruktor tablicy otrzyma tylko jeden argument liczbowy, utworzy listę bez elementów, ale o długości równej temu argumentowi. Zatem `[„Anakin”]` jest identyczny z nowym `Array(„Anakin”)`, ale `[10]` to nie to samo, co nowy `Array(10)`.
 
 Możliwe jest pominięcie operatora `new` podczas korzystania z konstruktora Array.  `new Array(„John”)` lub po prostu `Array(„John”)` robią to samo.
 
-Pamiętaj: 
+Pamiętaj:
+
 - używaj `literałów tablicowych` zamiast konstruktora Array;
 - konstruktor `Array` zachowuje się inaczej, jeśli jedynym argumentem, jaki do niego przekazujemy jest liczba.

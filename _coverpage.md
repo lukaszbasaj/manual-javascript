@@ -1,8 +1,8 @@
+<!-- markdownlint-disable MD041 -->
 
-![logo](_media/logo.svg ':size=600x600')
+![logo](_media/logo-javascript.svg ':size=600x600')
 
+# Manual :: JavaScript
 
-# Workshop #36 - Introduction to JavaScript
-
-[GitHub](https://github.com/lukaszbasaj/warsawjs-workshop-36)
-[Get Started](guide)
+[Zadania](https://github.com/lukaszbasaj/warsawjs-workshop-36)
+[Zaczynamy](README.md)

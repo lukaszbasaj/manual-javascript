@@ -1,4 +1,4 @@
-> **Operatory arytmetyczne**
+# Operatory arytmetyczne
 
 | Operator                      | Description                                                                                                                                                                                                              | Example                                                                                           |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -9,16 +9,17 @@
 | Unary plus (+)                | Unary operator. Attempts to convert the operand to a number, if it is not already.| +"3" returns 3.+true returns 1.|
 | Exponentiation operator (**)  | Calculates the base to the exponent power, that is, baseexponent                                                                                                                                                         | 2 ** 3 returns 8.10 ** -1 returns 0.1.|
 
-źródło: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+Źródło: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
->> **Dodawanie (+)** 
+## Dodawanie (+)
 
-*Operator dodawania generuje sumę operandów numerycznych lub konkatenacji łańcuchów*
+Operator dodawania generuje sumę operandów numerycznych lub konkatenacji łańcuchów.
 
-**Operator: x + y**
+### Operator: x + y
 
 Przykłady:
-```
+
+```js
 // Number + Number -> addition
 1 + 2 // 3
 
@@ -38,29 +39,32 @@ false + false // 0
 'foo' + 'bar' // "foobar"
 ```
 
->> **Odejmowanie(-)**
+## Odejmowanie(-)
 
-*Operator odejmowania odejmuje dwa operandy, powodując ich różnicę.*
+Operator odejmowania odejmuje dwa operandy, powodując ich różnicę.
 
-**Operator: x - y**
+### Operator: x - y
 
 Przykłady:
-```
+
+```js
 5 - 3 // 2
 3 - 5 // -2
 'foo' - 3 // NaN
 ```
 
->> **Dzielenie(/)**
+## Dzielenie(/)
 
-*Operator podziału wytwarza iloraz swoich operandów, gdzie lewy operand jest dzielną, a prawy operand jest dzielnikiem.*
+Operator podziału wytwarza iloraz swoich operandów, gdzie lewy operand jest dzielną,
+a prawy operand jest dzielnikiem.
 
-**Operator: x / y**
+### Operator: x / y
 
 Przykłady:
-```
+
+```js
 1 / 2      // returns 0.5 in JavaScript
-1 / 2      // returns 0 in Java 
+1 / 2      // returns 0 in Java
 // (neither number is explicitly a floating point number)
 
 1.0 / 2.0  // returns 0.5 in both JavaScript and Java
@@ -70,27 +74,30 @@ Przykłady:
 2.0 / -0.0 // returns -Infinity in JavaScript
 ```
 
->> **Mnożenie(*)**
+## Mnożenie(*)
 
-*Operator mnożenia tworzy iloczyn operandów.*
+Operator mnożenia tworzy iloczyn operandów.
 
-**Operator: x * y**
+### Operator: x * y
 
 Przykłady:
-```
+
+```js
 2 * 2 // 4
 -2 * 2 // -4
 Infinity * 0 // NaN
 Infinity * Infinity // Infinity
 'foo' * 2 // NaN
-``` 
-
->> **Modulo(%)**
-
-*Operator reszty zwraca resztkę pozostałą po podzieleniu jednego operandu przez drugi operand. To zawsze wymaga znaku dzielenia.*
-
-**Operator: var1 % var2**
 ```
+
+## Modulo(%)
+
+*Operator reszty zwraca resztkę pozostałą po podzieleniu jednego operandu przez
+drugi operand. To zawsze wymaga znaku dzielenia.*
+
+### Operator: var1 % var2
+
+```js
 12 % 5 // 2
 -1 % 2 // -1
 1 % -2 // 1
@@ -101,14 +108,16 @@ NaN % 2 // NaN
 5.5 % 2 // 1.5
 ```
 
->> **Potęgowanie( ** )**
+## Potęgowanie( ** )
 
-*Operator potęgowania zwraca wynik podniesienia pierwszego operandu do potęgi drugiego operandu.*
+Operator potęgowania zwraca wynik podniesienia pierwszego operandu do potęgi
+drugiego operandu.
 
-**Operator: var1 ** var2**
+### Operator: var1 ** var2
 
 Przykłady:
-```
+
+```js
 2 ** 3 // 8
 3 ** 2 // 9
 3 ** 2.5 // 15.588457268119896

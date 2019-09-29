@@ -1,61 +1,55 @@
-> Obiekty i tablice
+# Obiekty i tablice
 
 Przełącz się na branch `03-objects-and-arrays`
 
-- Ćwiczenie 1
-  
-Napisz kod, jeden wiersz dla każdej akcji: 
-Utwórz pusty obiekt `user`. 
-- Dodaj właściwość `name` o wartości `John`. 
-- Dodaj właściwość `surname` o wartości `Smith`. 
-- Zmień wartość imienia na Pete. 
-- Usuń właściwość `name` z obiektu.
+## Ćwiczenie 1
 
---- 
+Napisz kod, jeden wiersz dla każdej akcji:
 
-- Ćwiczenie 2
+* Utwórz pusty obiekt `user`.
+* Dodaj właściwość `name` o wartości `John`.
+* Dodaj właściwość `surname` o wartości `Smith`.
+* Zmień wartość imienia na Pete.
+* Usuń właściwość `name` z obiektu.
 
-Stwórz 2 obiekty produktów prod1 i prod2, gdzie każdy z nich będzie miał właściwości:
+## Ćwiczenie 2
 
-- `name` - typu `string`,
-- `price` - typu `number`,
-- `weight` - typu `number`
+* Stwórz 2 obiekty produktów prod1 i prod2, gdzie każdy z nich będzie miał właściwości:
+    + `name` - typu `string`,
+    + `price` - typu `number`,
+    + `weight` - typu `number`
+* Wypisz oba obiekty w konsoli.
+* Wypisz w konsoli teksty:
 
-1) Wypisz oba obiekty w konsoli.
+    ```text
+    "Produkt numer jeden to: "
+    "Produkt numer dwa to: "
+    "Produkty kosztują razem: "
+    "Produkty ważą razem: "
+    ```
 
-2) Wypisz w konsoli teksty:
-3) 
-"Produkt numer jeden to: "
+    Gdzie pod zmienne podstaw odpowiednie dane.
 
-"Produkt numer dwa to: "
+## Ćwiczenie 3
 
-"Produkty kosztują razem: "
+Mając tablicę z nazwami kontynentów, posortuj ją alfabetycznie, a następnie
+odwróć kolejność jej elementów.
 
-"Produkty ważą razem: "
+```js
+const kontynenty = [
+    'Europa', 'Azja', 'Antarktyda', 'Afryka',
+    'Australia i Oceania', 'Ameryka Północna',
+    'Ameryka Południowa'
+];
+```
 
-Gdzie pod zmienne podstaw odpowiednie dane.
+Dodaj na końcu tablicy `Nowy Nieodkryty Kontynent` i usuń z tablicy element `Antarktyda`.
 
----
+## Ćwiczenie 4
 
-- Ćwiczenie 3
-Mając tablicę z nazwami kontynentów, posortuj ją alfabetycznie, a następnie odwróć kolejność jej elementów.
-
- `const kontynenty = [ 'Europa', 'Azja', 'Antarktyda', 'Afryka', 'Australia i Oceania', 'Ameryka Północna', 'Ameryka Południowa' ]`
- 
- Dodaj na końcu tablicy `Nowy Nieodkryty Kontynent` i usuń z tablicy element `Antarktyda`.
- 
- ---
-
-- Ćwiczenie 4
-  
-Utwórz tablicę `style` z elementami „Jazz” i „Blues”.
-
-Dołącz „Rock-n-Roll” na końcu.
-
-Zamień wartość w środku na „Classics”.
-
-Zdejmij pierwszą wartość tablicy i pokaż ją.
-
-Dodaj Rap i Reggae do tablicy.
-
-Zamień Rap na Metal.
+* Utwórz tablicę `style` z elementami „Jazz” i „Blues”.
+* Dołącz „Rock-n-Roll” na końcu.
+* Zamień wartość w środku na „Classics”.
+* Zdejmij pierwszą wartość tablicy i pokaż ją.
+* Dodaj Rap i Reggae do tablicy.
+* Zamień Rap na Metal.
