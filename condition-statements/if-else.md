@@ -7,7 +7,7 @@ Czasami musimy wykonywać różne działania w zależności od różnych warunk�
 
 Instrukcja `if(...)` sprawdza warunek w nawiasach i, jeśli wynik jest prawdziwy, wykonuje blok kodu.
 
-```
+```js
 let year = prompt('In which year was ECMAScript-2015 specification published?', '');
 
 if (year == 2015) alert( 'You are right!' );
@@ -15,7 +15,7 @@ if (year == 2015) alert( 'You are right!' );
 
 Instrukcja `if` może zawierać opcjonalny blok `else`. Wykonuje się, gdy warunek jest fałszywy.
 
-```
+```js
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year == 2015) {
@@ -27,7 +27,7 @@ if (year == 2015) {
 
 Czasami chcielibyśmy przetestować kilka wariantów stanu. Klauzula `else...if` pozwala nam to zrobić.
 
-```
+```js
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year < 2015) {
@@ -44,7 +44,7 @@ W powyższym kodzie JavaScript najpierw sprawdza rok < 2015. Jeśli jest to `fal
 Czasami musimy przypisać zmienną w zależności od warunku.
 
 
-```
+```js
 let accessAllowed;
 let age = prompt('How old are you?', '');
 
@@ -60,13 +60,13 @@ Operator jest reprezentowany przez znak zapytania `?` Czasami nazywa się „ter
 
 Składnia tego operatora zapisywana jest w formie:
 
-```
+```js
 let result = condition ? value1 : value2;
 ```
 
 w naszym przypadku:
 
-```
+```js
 let accessAllowed = (age > 18) ? true : false;
 ```
 
@@ -97,7 +97,7 @@ Stwórz trzy zmienne: a = 4, b = 5, c = 6. Za pomocą instrukcji warunkowych spr
 
 Przepisz poniższy kod, używając instrukcji `switch`:
 
-```
+```js
 let a = +prompt('a?', '');
 
 if (a == 0) {
@@ -106,7 +106,6 @@ if (a == 0) {
 if (a == 1) {
   alert( 1 );
 }
-
 if (a == 2 || a == 3) {
   alert( '2,3' );
 }
