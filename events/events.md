@@ -11,7 +11,7 @@ Zdarzenia to działania, które mają miejsce w przeglądarce, które mogą być
 `AddEventListener()` to wbudowana funkcja w JavaScript, która pobiera zdarzenie w celu nasłuchiwania i drugi argument, który należy wywoływać za każdym razem, gdy opisane zdarzenie zostanie uruchomione. Do jednego elementu można dodać dowolną liczbę procedur obsługi zdarzeń bez nadpisywania istniejących procedur obsługi zdarzeń.
 
 
-```
+```js
 element.addEventListener(event, listener, useCapture);
 
 ```
@@ -20,7 +20,7 @@ Przyjmuje ona 3 argumenty: typ zdarzenia, funkcja callback do wywołania, oraz t
 
 Po dodaniu event listenera  funkcja do wykonania po zdarzeniu może być anonimowa lub nazwana. W poniższym przykładzie użyto anonimowej funkcji. W takim przypadku musisz zdefiniować kod w funkcji:
 
-```
+```js
 a.addEventListener("click", () => {
   alert("You clicked?"); 
 });
@@ -28,7 +28,7 @@ a.addEventListener("click", () => {
 ```
 Ten sam efekt uzyskamy używając funkcji nazwanej:
 
-```
+```js
 a.addEventListener("click", clickFunction);
 function clickFunction() {
     alert ("So that's what happens when you click.");
@@ -36,14 +36,14 @@ function clickFunction() {
 ```
 Metoda `addEventListener()` pozwala dodawać wiele procedur obsługi zdarzeń do jednego elementu, nie zastępując wcześniej przypisanych procedur obsługi zdarzeń. Spójrz na poniższy przykład:
 
-```
+```js
 a.addEventListener("click", firstFunction);
 a.addEventListener("click", secondFunction);
 
 ```
 
 Można również określić różne typy zdarzeń:
-```
+```js
 a.addEventListener("mouseover", mouseOverFunction);
 a.addEventListener("click", clickFunction);
 a.addEventListener("mouseout", mouseOutFunction);
