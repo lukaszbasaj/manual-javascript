@@ -2,7 +2,7 @@
 
 Instrukcja `while` tworzy pętlę, która wykonuje określoną instrukcję, o ile warunek testu zostanie oceniony jako `true`. Warunek jest oceniany przed wykonaniem instrukcji.
 
-```
+```js
 var n = 0;
 
 while (n < 3) {
@@ -13,4 +13,3 @@ console.log(n);
 // expected output: 3
 
 ```
-
