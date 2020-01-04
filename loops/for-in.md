@@ -1,9 +1,9 @@
 > Pętla `for..in`
 
 
-Pętla `for...in` iteruje właściwości obiektu i wykonuje ciało pętli jeden raz dla każdej wyliczalnej właściwości obiektu. 
+Pętla `for...in` iteruje właściwości obiektu i wykonuje ciało pętli jeden raz dla każdej wyliczalnej właściwości obiektu.
 
-```
+```js
 const obj = {a: 1, b: 2, c: 3};
     
 for (const prop in obj) {
@@ -18,7 +18,7 @@ for (const prop in obj) {
 
 Używaj `for…in`, aby iterować właściwości obiektu (klucze obiektu):
 
-```
+```js
 let oldCar = {
   make: 'Toyota',
   model: 'Tercel',
