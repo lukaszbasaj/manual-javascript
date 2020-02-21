@@ -14,6 +14,7 @@
     + [var i hoisting](data-types/var.md)
     + [let](data-types/let.md)
     + [const](data-types/const.md)
+    + [Temporal Dead Zone](data-types/tdz.md)
 * Operatory
     + [Arytmetyczne](operators/arithmetics.md)
     + [Przypisania](operators/assignments.md)
