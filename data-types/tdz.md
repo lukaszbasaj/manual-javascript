@@ -28,7 +28,8 @@ W przypadku deklaracji zmiennych za pomocą słowa kluczowego `let` sytuacja sta
 {
 	console.log( typeof a ); // Uncaught ReferenceError: a is not defined
 
-	let a = 1;
+    let a = 1;
+}
 ```
 
 Zatem można wnioskować, iż zmienne deklarowane przez `let` nie są hoistowane. Spójrzmy jednak na inny przykład:
@@ -66,6 +67,5 @@ Mechanizm ten wprowadzono dla `const`, aby uniemożliwić nadpisanie stałej wew
 
 Źródło:
 
-[Comandeer's blog] (https://blog.comandeer.pl/tdz.html)
-
-[Dr. Axel Rauschmayer] (https://exploringjs.com/es6/ch_variables.html#sec_temporal-dead-zone)
+- [Comandeer's blog] (https://blog.comandeer.pl/tdz.html)
+- [Dr. Axel Rauschmayer] (https://exploringjs.com/es6/ch_variables.html#sec_temporal-dead-zone)
