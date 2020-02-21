@@ -28,7 +28,8 @@ W przypadku deklaracji zmiennych za pomocą słowa kluczowego `let` sytuacja sta
 {
 	console.log( typeof a ); // Uncaught ReferenceError: a is not defined
 
-	let a = 1;
+    let a = 1;
+}
 ```
 
 Zatem można wnioskować, iż zmienne deklarowane przez `let` nie są hoistowane. Spójrzmy jednak na inny przykład:
