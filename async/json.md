@@ -1,8 +1,8 @@
 # JavaScript Object Notation
 
-JSON to format pliku służący do przechowywania i wymiany danych.
+`JSON` to format pliku służący do przechowywania i wymiany danych.
 Dane są przechowywane w zestawie par klucz-wartość. Te dane są czytelne dla
-człowieka, co sprawia, że JSON jest idealny do ręcznej edycji.
+człowieka, co sprawia, że `JSON` jest idealny do ręcznej edycji.
 
 ```json
 {
@@ -31,13 +31,13 @@ Z tego małego fragmentu widać, że klucze są zawinięte w podwójne cudzysło
 dwukropek oddziela klucz i wartość, a wartość może być różnego rodzaju.
 Zestawy klucz-wartość są oddzielone przecinkiem.
 
-JSON urodził się w 2002 roku i zyskał ogromną popularność dzięki łatwości użycia
+`JSON` urodził się w 2002 roku i zyskał ogromną popularność dzięki łatwości użycia
 i elastyczności, i chociaż narodził się ze świata JavaScript, szybko
 rozprzestrzenił się na inne języki programowania.
 
 Jest zdefiniowany w standardzie [ECMA-404](http://www.ecma-international.org/flat/publications/files/ECMA-ST/ECMA-404.pdf).
 
-Ciągi JSON są zwykle przechowywane w plikach .json i przesyłane przez sieć z typem aplikacji / json MIME.
+Ciągi `JSON` są zwykle przechowywane w plikach .json i przesyłane przez sieć z typem aplikacji / json MIME.
 
 ## Typy danych
 
@@ -50,7 +50,7 @@ JSON obsługuje niektóre podstawowe typy danych:
 * `Object`: zestaw kluczy pary wartości, owinięte nawiasami klamrowymi
 * `null`: słowo null, które reprezentuje pustą wartość
 
-Każdy inny typ danych musi być serializowany do ciągu (a następnie zdezserializowany), aby można go było zapisać w JSON.
+Każdy inny typ danych musi być serializowany do ciągu (a następnie zdezserializowany), aby można go było zapisać w `JSON`.
 
 ## Kodowanie i dekodowanie JSON w JavaScript
 
