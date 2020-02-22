@@ -1,7 +1,7 @@
 # Fetch API
 
 Nowe przeglądarki udostępniają nam Fetch API - nowy interfejs do pobierania zasobów.
-Fetch zwraca Promise, zatem możemy skorzystać z metod then, all i catch.
+Fetch zwraca Promise, zatem możemy skorzystać z metod `then`, `all` i `catch`.
 
 ```js
 const url = 'http://fakes.herokuapp.com/photos/';
