@@ -1,6 +1,5 @@
 # Welcome to Manual :: JavaScript 👋
 [![buddy pipeline](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272/badge.svg?token=065ef370272ce3784a747af5fbd7814b4594a70cf2b796212a37335fc1f9b6ab "buddy pipeline")](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](documentation.url)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lukaszbasaj/manual-javascript/blob/master/LICENSE.md)
 [![Twitter: basajlukasz](https://img.shields.io/twitter/follow/basajlukasz.svg?style=social)](https://twitter.com/basajlukasz)
 
