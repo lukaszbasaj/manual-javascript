@@ -38,7 +38,7 @@ docsify serve
 
 For more use cases of `docsify-cli`, head over to the [docsify-cli documentation](https://github.com/docsifyjs/docsify-cli).
 
-For more useful feature of `docsify` please look on the [doscify documentation](https://docsify.js.org/)
+For more useful features of `docsify` please look on the [doscify documentation](https://docsify.js.org/)
 
 
 ## 🤝 Contributing
