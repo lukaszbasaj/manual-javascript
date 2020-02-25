@@ -10,7 +10,7 @@
 
 
 ## 🎉 Quick start 
-It is recommended to install docsify-cli globally, which helps initializing and previewing the website locally.
+It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
 
 ```sh
 npm i docsify-cli -g
