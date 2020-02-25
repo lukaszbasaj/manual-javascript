@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lukaszbasaj/manual-javascript/blob/master/LICENSE.md)
 [![Twitter: basajlukasz](https://img.shields.io/twitter/follow/basajlukasz.svg?style=social)](https://twitter.com/basajlukasz)
 
-> description
+> Manual for JavaScript beginners
 
 
 ### ✨ [Demo](https://js-sandbox.basaj.dev/manual/)
