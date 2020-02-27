@@ -29,14 +29,15 @@ Dobre praktyki:
 
 ## Lista słów zarezerwowanych
 
-| |||||||
-|- | - | - | -| - | -| -|
-|await|abstract|boolean|byte|break|char|class|
-|case|catch|continue|const|debugger|double|default|
-|delete|do|enum|export|extends|else|final|
-|float|false|finally|for|function|goto|implements|
-|import|int|interface|if|in|instanceof|long|
-|native|new|null|package|private|protected|public|
-|return|short|static|super|synchronized|switch|throws|
-|transient|this|throw|true|try|typeof|volatile|
-||var|void|while|with|yield||
+||||||||
+|-|-|-|-|-|-|-|
+|await|break|case|catch|class|const|continue|
+|debugger|default|delete|do|else|enum|export|
+|extends|false|finally|for|function|if|import|
+|in|instanceof|new|null|return|super|switch|
+|this|throw|true|try|typeof|var|void|
+|||while|with|yield|||
+
+## Źródła
+
+* [ECMAScript® 2020 - Reserved Words](https://tc39.es/ecma262/#prod-ReservedWord/)
