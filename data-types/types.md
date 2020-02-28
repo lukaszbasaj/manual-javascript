@@ -96,6 +96,29 @@ doNothing()               // undefined
 function showNames(name,lastname){return name + ", " + lastname;}
 showNames("Jan")          // "Jan, undefined"
 ```
+
+
+## null
+Jest wykorzystywany do deklaracji końca łańcucha prototypów. 
+
+```js
+const object = {
+  name: "JavaScript"
+};
+object.hasOwnProperty("name") // true
+
+object.__proto__ = undefined;
+object.hasOwnProperty("name") // true
+
+object.__proto__ = null;
+object.hasOwnProperty("name") // throw error: object.hasOwnProperty is not a function
+```  
+
+Wartość `null` w przeciwieństwie do `undefined` wystąpuje jedynie po przypisaniu. Nazwa typu jest zastrzeżona w 
+[liscie słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych). Ciekawostką jest, że `typeof null`
+zwraca "object", co nazywane jest często błędem języka.
+
+Źródło: [The history of “typeof null”](https://2ality.com/2013/10/typeof-null.html)
     
 ## Automatyczna konwersja typów
 
