@@ -12,10 +12,12 @@ Sześć *typów prostych* (primitives):
 
 Z czego dwie poniższe nie mogą przechowywać wartości:
 
-- **null**. Specjalne słowo kluczowe oznaczające wartość zerową.
+- **null**. Specjalne słowo kluczowe oznaczające wartość pustą.
     Ponieważ w języku JavaScript rozróżniana jest wielkość liter,
     `null` nie jest tym samym co Null, NULL lub jakikolwiek inny wariant.
-- **undefined**. Najwyższa właściwość, której wartość jest nieokreślona.
+- **undefined**. Najwyższa właściwość, której wartość jest nieokreślona. 
+    Typ jest zwracany, gdy zmienna nie ma przypisanej wartości bądź, 
+    gdy funkcja jawnie nic nie zwraca.
 
 Oraz *typ złożony* (composite):
 
