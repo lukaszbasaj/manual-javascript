@@ -42,6 +42,61 @@ console.log( typeof und ); //"undefined"
 console.log( typeof nul ); //"object" hmm?
 ```
 
+## undefined
+`undefined` jest zmienną o zasięgu globalnym o tej samej nazwie i wartości.
+ 
+```js
+console.log(undefined);    // undefined
+```
+
+Przypisanie innej wartości do zmiennej `undefined` nie powoduje zmiany.
+ 
+```js
+undefined = 1                  
+console.log(undefined);    // undefined
+```
+
+Można jednak przysłonić wartość zmiennej `undefined`. Każde przypisanie w tedy `undefined` będzie zwracać nową wartość.
+`undefined` nie znajduje się na [liscie słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych),
+stąd możliwośc przypisania w odróżnieniu do typu `null`, gdzie nie jest to możliwe.
+
+
+```js
+const undefined = 1                  
+console.log(undefined);    // 1
+```  
+### Kiedy mamy do czynienia z `undefined`:  
+
+```js
+// Przy dostępie do nie przysłoniętej wartości `undefined`:
+console.log(undefined);    // undefined
+
+// Gdy zadeklarowana zmienna nie ma przypisanej wartości:
+let a;
+console.log(a);            // undefined
+
+// W odwołaniu się do nie istniejącej wartości w obiekcie:
+const object = {};
+console.log(object.a);     // undefined
+
+// Wszędzie, gdzie została przypisana wartość `undefined`:
+let b;
+const c = b;
+console.log(c);           // undefined
+
+// W zwracanej przez funkcje wartość, która nie ma deklaracji `return`:
+function doNothing() { /* empty */ }
+doNothing()               // undefined
+
+// W zwracanej przez funkcje wartość, w której deklaracja `return` nic jawnie nie zwraca:
+function doNothing() { return; }
+doNothing()               // undefined
+
+// Gdy parametr funkcji nie przyjmuje żadnej wartości:
+function showNames(name,lastname){return name + ", " + lastname;}
+showNames("Jan")          // "Jan, undefined"
+```
+    
 ## Automatyczna konwersja typów
 
 JavaScript nie wymaga od Ciebie abyś deklarował typ zmiennych. Przykładowo możesz
