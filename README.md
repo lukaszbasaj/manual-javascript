@@ -53,6 +53,11 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/lukaszbasaj/manual-javascript/issues). You can also take a look at the [contributing guide](https://github.com/lukaszbasaj/manual-javascript/blob/master/CONTRIBUTING.md).
 
+### How to start?
+
+Look for places that are sensitive to the expiration period by the new [ECMAScript](https://tc39.es/) version introduced.
+
+- [Lista słów zarezerwowanych](https://github.com/lukaszbasaj/manual-javascript/blob/master/data-types/variables.md#lista-s%C5%82%C3%B3w-zarezerwowanych)
 
 
 ## Author
