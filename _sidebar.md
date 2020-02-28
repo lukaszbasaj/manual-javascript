@@ -9,6 +9,7 @@
 * Typy
     + [Typy wartości](data-types/types.md)
     + [truthy/falsy](data-types/truthy-falsy.md)
+    + [Konwersja typów](data-types/conversion.md)
 * Zmienne
     + [Czym są zmienne?](data-types/variables.md)
     + [var i hoisting](data-types/var.md)
