@@ -56,7 +56,7 @@ undefined = 1
 console.log(undefined);    // undefined
 ```
 
-Można jednak przysłonić wartość zmiennej `undefined`. Każde przypisanie w tedy `undefined` będzie zwracać nową wartość.
+Można jednak przysłonić wartość zmiennej `undefined`. Każde przypisanie wtedy `undefined` będzie zwracać nową wartość.
 `undefined` nie znajduje się na [liscie słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych),
 stąd możliwośc przypisania w odróżnieniu do typu `null`, gdzie nie jest to możliwe.
 
