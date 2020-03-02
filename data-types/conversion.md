@@ -194,7 +194,7 @@ Przy porównaniu typu prostego `Bolean`, `String` bądź `Number` z `object` zos
 [] == "0"      // [].valueOf() == "0" -> [].toString() == "0" -> "" == "0" -> false
 [] == 0        // [].valueOf() == 0   -> [].toString() == 0   -> "" == 0   -> Number("") == 0 -> 0 == 0 -> true
 
-[false] == 0   // [false].valueOf() == 0 -> [false].toString() == 0 -> "0,0" == 0 -> Number(false) == 0 -> 0 == 0 -> true
+[false] == 0   // [false].valueOf() == 0 -> [false].toString() == 0 -> "false" == 0 -> Number("false") == 0 -> NaN == 0 -> false
 
 ["0"] == 0     // ["0"].valueOf() == 0   -> ["0"].toString() == 0   -> "0" == 0   -> Number("0") == 0   -> 0 == 0 -> true
 ["0","0"] == 0 // ["0","0"].valueOf() == 0 -> ["0","0"].toString() == 0 -> "0,0" == 0 -> Number("0,0") == 0 -> NaN == 0 -> false
