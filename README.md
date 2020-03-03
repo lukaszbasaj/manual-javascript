@@ -5,9 +5,7 @@
 
 > ⚡JavaScript basics manual with a set of exercises preprared for WarsawJS Workshop⚡
 
-
 ### ✨ [Demo](https://js-sandbox.basaj.dev/manual/)
-
 
 ## 🎉 Quick start 
 It is recommended to install `docsify-cli` globally, which helps initializing 
@@ -16,6 +14,7 @@ and previewing the website locally.
 ```sh
 npm i docsify-cli -g
 ```
+
 ### Writing content
 
 `index.html` as the entry file
@@ -27,7 +26,6 @@ npm i docsify-cli -g
 `guide.md` as the agenda content page
 
 `_coverpage.md` as the cover page
-
 
 ### Preview your site
 
@@ -63,7 +61,6 @@ You can also take a look at the [contributing guide](https://github.com/lukaszba
  - If you need to add new file just do this in proper localization and make sure 
  you also add a reference to the `_sidebar.md`
 
-
 ## Author
 
 👤 **Łukasz Basaj**
@@ -73,12 +70,9 @@ You can also take a look at the [contributing guide](https://github.com/lukaszba
 * Github: [@lukaszbasaj](https://github.com/lukaszbasaj)
 * LinkedIn: [@lukasz-basaj](https://linkedin.com/in/lukasz-basaj)
 
-
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
 
 ## 📝 License
 
