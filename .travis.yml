@@ -1,12 +1,4 @@
-sudo: false
 language: node_js
-node_js: stable
-os:
-  - linux
-  - osx
-cache:
-  directories:
-    - ./node_modules
-install:
-  - npm install
-  - npm run build
+
+node_js:
+  - "lts/*"
