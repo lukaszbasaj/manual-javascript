@@ -24,12 +24,12 @@ Cykl pracy z API możemy określić następująco:
     aby KAŻDY po przeczytaniu tego artykułu wiedział do czego służy API.
 
 Do zbudowania podstawowego API pozwalającego na odczyt, zapis, aktualizację
-i usuwanie danych wystarczą tylko 4 metody – GET, POST, PUT i DELETE.
+i usuwanie danych wystarczą tylko 4 metody – `GET`, `POST`, `PUT` i `DELETE`.
 
-* GET — pobieranie (zarówno kolekcji, jak i pojedynczego elementu)
-* POST — tworzenie (tylko kolekcji)
-* PUT — aktualizacja (tylko pojedynczego elementu)
-* DELETE — usuwanie (tylko pojedynczego elementu)
+* `GET` — pobieranie (zarówno kolekcji, jak i pojedynczego elementu)
+* `POST` — tworzenie (tylko kolekcji)
+* `PUT` — aktualizacja (tylko pojedynczego elementu)
+* `DELETE` — usuwanie (tylko pojedynczego elementu)
 
 ## Zasady tworzące REST
 
