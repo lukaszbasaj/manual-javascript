@@ -1,12 +1,12 @@
 # Instrukcja warunkowa `if...else`
 
-Czasami musimy wykonywać różne działania w zależności od różnych warunków. 
+Czasami musimy wykonywać różne działania w zależności od różnych warunków.
 W tym celu możemy użyć instrukcji `if...else.`
 
 ![if...else](if.png)
 
-Instrukcja `if(...)` sprawdza warunek w nawiasach i,
-jeśli wynik jest prawdziwy, wykonuje blok kodu.
+Instrukcja `if(...)` sprawdza warunek w nawiasach i, jeśli wynik jest prawdziwy,
+wykonuje blok kodu.
 
 ```js
 let year = prompt('In which year was ECMAScript-2015 specification published?', '');
