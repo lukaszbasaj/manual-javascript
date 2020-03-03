@@ -1,0 +1,25 @@
+{
+    "name": "manual-javascript",
+    "version": "1.0.0",
+    "description": "Manual :: JavaScript",
+    "main": "index.md",
+    "dependencies": {
+        "markdownlint-cli": "^0.22.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "npm run lint",
+        "lint": "markdownlint . --ignore node_modules"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lukaszbasaj/manual-javascript.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lukaszbasaj/manual-javascript/issues"
+    },
+    "homepage": "https://github.com/lukaszbasaj/manual-javascript#readme"
+}
