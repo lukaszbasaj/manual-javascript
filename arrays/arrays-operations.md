@@ -1,4 +1,4 @@
-> Opercje na tablicach
+# Opercje na tablicach
 
 ## Sprawdzanie długości tablicy
 
@@ -11,6 +11,7 @@ console.log(heros.length);
 ```
 
 ## Dostęp do elementów tablicy
+
 ```js
 const first = heros[0];
 // Yoda
@@ -27,6 +28,7 @@ var newLength = fruits.unshift('Strawberry') // add to the front
 // ["Strawberry", "Banana"];
 
 ```
+
 ## Usuwanie elementu z początku tablicy
 
 ```js
@@ -34,6 +36,7 @@ var first = fruits.shift(); // remove Apple from the front
 // ["Banana"];
 
 ```
+
 ## Dodawanie elementu na końcu tablicy
 
 ```js
@@ -50,13 +53,15 @@ var last = fruits.pop(); // remove Orange (from the end)
 // ["Apple", "Banana"];
 
 ```
-##Szukanie indeksu elementu
+
+## Szukanie indeksu elementu
 
 ```js
 var pos = fruits.indexOf('Banana');
 // 1
 
 ```
+
 ## Sortowanie tablicy
 
 ```js
@@ -66,6 +71,7 @@ console.log(months);
 // expected output: Array ["Dec", "Feb", "Jan", "March"]
 
 ```
+
 ## Odwracanie kolejności elementów
 
 ```js
@@ -73,11 +79,12 @@ var array1 = ['one', 'two', 'three'];
 console.log('array1: ', array1);
 // expected output: Array ['one', 'two', 'three']
 
-var reversed = array1.reverse(); 
+var reversed = array1.reverse();
 console.log('reversed: ', reversed);
 // expected output: Array ['three', 'two', 'one']
 
 ```
+
 ## Łączenie tablic
 
 ```js
@@ -89,6 +96,7 @@ const table = anim1.concat(anim2);
 console.log(table); //wypisze ["Pies", "Kot", "Słoń", "Wieloryb"]
 
 ```
+
 ## Kopiowanie tablicy
 
 ```js
@@ -112,6 +120,7 @@ console.log(elements.join('-'));
 // expected output: "Fire-Air-Water"
 
 ```
+
 ## Iterowanie po tablicy
 
 ```js
@@ -139,7 +148,5 @@ console.log(map1);
 // expected output: Array [2, 8, 18, 32]
 
 ```
-
-
 
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
