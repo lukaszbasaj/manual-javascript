@@ -1,4 +1,3 @@
-
 # HTTP
 
 HTTP to skrót od Hypertext Transfer Protocol i jest to główny protokół używany
