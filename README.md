@@ -10,7 +10,8 @@
 
 
 ## 🎉 Quick start 
-It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
+It is recommended to install `docsify-cli` globally, which helps initializing 
+and previewing the website locally.
 
 ```sh
 npm i docsify-cli -g
@@ -51,13 +52,16 @@ For more useful features of `docsify` please look on the [doscify documentation]
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/lukaszbasaj/manual-javascript/issues). You can also take a look at the [contributing guide](https://github.com/lukaszbasaj/manual-javascript/blob/master/CONTRIBUTING.md).
+Feel free to check [issues page](https://github.com/lukaszbasaj/manual-javascript/issues). 
+You can also take a look at the [contributing guide](https://github.com/lukaszbasaj/manual-javascript/blob/master/CONTRIBUTING.md).
 
 ### How to start?
 
-Look for places that are sensitive to the expiration period by the new [ECMAScript](https://tc39.es/) version introduced.
-
-- [Lista słów zarezerwowanych](https://github.com/lukaszbasaj/manual-javascript/blob/master/data-types/variables.md#lista-s%C5%82%C3%B3w-zarezerwowanych)
+ - If you're looking for a place to modify please check in files structure. 
+ For example, if you want to modify list of reserved words in section `variables.md` 
+ just find this file and do your changes.
+ - If you need to add new file just do this in proper localization and make sure 
+ you also add a reference to the `_sidebar.md`
 
 
 ## Author
