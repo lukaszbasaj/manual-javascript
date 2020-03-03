@@ -1,11 +1,12 @@
-> Instrukcja warunkowa `if...else`
+# Instrukcja warunkowa `if...else`
 
-Czasami musimy wykonywać różne działania w zależności od różnych warunków. W tym celu możemy użyć instrukcji `if...else.`
+Czasami musimy wykonywać różne działania w zależności od różnych warunków. 
+W tym celu możemy użyć instrukcji `if...else.`
 
 ![if...else](if.png)
 
-
-Instrukcja `if(...)` sprawdza warunek w nawiasach i, jeśli wynik jest prawdziwy, wykonuje blok kodu.
+Instrukcja `if(...)` sprawdza warunek w nawiasach i,
+jeśli wynik jest prawdziwy, wykonuje blok kodu.
 
 ```js
 let year = prompt('In which year was ECMAScript-2015 specification published?', '');
@@ -13,7 +14,8 @@ let year = prompt('In which year was ECMAScript-2015 specification published?', 
 if (year == 2015) alert( 'You are right!' );
 ```
 
-Instrukcja `if` może zawierać opcjonalny blok `else`. Wykonuje się, gdy warunek jest fałszywy.
+Instrukcja `if` może zawierać opcjonalny blok `else`.
+Wykonuje się, gdy warunek jest fałszywy.
 
 ```js
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
@@ -25,7 +27,8 @@ if (year == 2015) {
 }
 ```
 
-Czasami chcielibyśmy przetestować kilka wariantów stanu. Klauzula `else...if` pozwala nam to zrobić.
+Czasami chcielibyśmy przetestować kilka wariantów stanu.
+Klauzula `else...if` pozwala nam to zrobić.
 
 ```js
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
@@ -38,11 +41,12 @@ if (year < 2015) {
   alert( 'Exactly!' );
 }
 ```
-W powyższym kodzie JavaScript najpierw sprawdza rok < 2015. Jeśli jest to `false`, przechodzi do następnego warunku rok> 2015. Jeśli jest to również `false`, wyświetla ostatni `alert`. Bloków może być więcej. Ostatnia opcja jest opcjonalna.
 
+W powyższym kodzie JavaScript najpierw sprawdza rok < 2015. Jeśli jest to `false`,
+przechodzi do następnego warunku rok> 2015. Jeśli jest to również `false`,
+wyświetla ostatni `alert`. Bloków może być więcej. Ostatnia opcja jest opcjonalna.
 
 Czasami musimy przypisać zmienną w zależności od warunku.
-
 
 ```js
 let accessAllowed;
@@ -56,7 +60,9 @@ if (age > 18) {
 
 alert(accessAllowed);
 ```
-Operator jest reprezentowany przez znak zapytania `?` Czasami nazywa się „ternary”, ponieważ operator ma trzy operandy. 
+
+Operator jest reprezentowany przez znak zapytania `?`
+Czasami nazywa się „ternary”, ponieważ operator ma trzy operandy.
 
 Składnia tego operatora zapisywana jest w formie:
 
@@ -70,10 +76,11 @@ w naszym przypadku:
 let accessAllowed = (age > 18) ? true : false;
 ```
 
---- 
+---
 
 - Ćwiczenie 1
-Używając `if...else`, napisz kod, który otrzymuje numer za pomocą monitu (`prompt()`) następnie wyświetli `alert`:  
+Używając `if...else`, napisz kod, który otrzymuje numer za pomocą 
+monitu (`prompt()`) następnie wyświetli `alert`:  
 - 1, jeśli wartość jest większa od zera,  
 - -1, jeśli jest mniejsza niż zero, 
 - 0, jeśli jest równa zero. 
@@ -89,7 +96,8 @@ Przepisz Ćwiczenie1 używając operatora warunkowego `?`.
 
 - Ćwiczenie 3
 
-Stwórz trzy zmienne: a = 4, b = 5, c = 6. Za pomocą instrukcji warunkowych sprawdź, która zmienna jest największa (pomiń wariant kiedy zmienne mogły by być równe).
+Stwórz trzy zmienne: a = 4, b = 5, c = 6. Za pomocą instrukcji warunkowych sprawdź,
+która zmienna jest największa (pomiń wariant kiedy zmienne mogły by być równe).
 
 ---
 
