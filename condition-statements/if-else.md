@@ -1,6 +1,6 @@
 # Instrukcja warunkowa `if...else`
 
-Czasami musimy wykonywać różne działania w zależności od różnych warunków. 
+Czasami musimy wykonywać różne działania w zależności od różnych warunków.
 W tym celu możemy użyć instrukcji `if...else.`
 
 ![if...else](if.png)
