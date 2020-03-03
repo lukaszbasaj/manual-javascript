@@ -37,7 +37,8 @@ rozprzestrzenił się na inne języki programowania.
 
 Jest zdefiniowany w standardzie [ECMA-404](http://www.ecma-international.org/flat/publications/files/ECMA-ST/ECMA-404.pdf).
 
-Ciągi `JSON` są zwykle przechowywane w plikach .json i przesyłane przez sieć z typem aplikacji / json MIME.
+Ciągi `JSON` są zwykle przechowywane w plikach .json i przesyłane przez sieć z typem
+aplikacji / json MIME.
 
 ## Typy danych
 
@@ -50,11 +51,18 @@ JSON obsługuje niektóre podstawowe typy danych:
 * `Object`: zestaw kluczy pary wartości, owinięte nawiasami klamrowymi
 * `null`: słowo null, które reprezentuje pustą wartość
 
-Każdy inny typ danych musi być serializowany do ciągu (a następnie zdezserializowany), aby można go było zapisać w `JSON`.
+Każdy inny typ danych musi być serializowany do ciągu
+(a następnie zdezserializowany), aby można go było zapisać w `JSON`.
 
 ## Kodowanie i dekodowanie JSON w JavaScript
 
-ECMAScript 5 w 2009 roku wprowadził obiekt `JSON` w standardzie JavaScript, który oferuje między innymi metody `JSON.parse()` i `JSON.stringify()`. Zanim będzie można go użyć w programie JavaScript, `JSON` w formacie ciągu musi zostać przeanalizowany i przekształcony w dane, z których może korzystać JavaScript.
+ECMAScript 5 w 2009 roku wprowadził obiekt `JSON` w standardzie JavaScript,
+który oferuje między innymi metody `JSON.parse()` i `JSON.stringify()`.
+Zanim będzie można go użyć w programie JavaScript, `JSON` w formacie
+ciągu musi zostać przeanalizowany i przekształcony w dane,
+z których może korzystaćJavaScript.
 
-* `JSON.parse()` przyjmuje parametr `JSON` jako parametr i zwraca obiekt zawierający przeanalizowany `JSON`.
-* `JSON.stringify()` przyjmuje obiekt JavaScript jako parametr i zwraca ciąg znaków reprezentujący go w `JSON`
+* `JSON.parse()` przyjmuje parametr `JSON` jako parametr i zwraca 
+obiekt zawierający przeanalizowany `JSON`.
+* `JSON.stringify()` przyjmuje obiekt JavaScript jako parametr i zwraca ciąg 
+znaków reprezentujący go w `JSON`
