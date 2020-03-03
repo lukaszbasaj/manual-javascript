@@ -67,5 +67,5 @@ Mechanizm ten wprowadzono dla `const`, aby uniemożliwić nadpisanie stałej wew
 
 Źródło:
 
-- [Comandeer's blog] (https://blog.comandeer.pl/tdz.html)
-- [Dr. Axel Rauschmayer] (https://exploringjs.com/es6/ch_variables.html#sec_temporal-dead-zone)
+- [Comandeer's blog](https://blog.comandeer.pl/tdz.html)
+- [Dr. Axel Rauschmayer](https://exploringjs.com/es6/ch_variables.html#sec_temporal-dead-zone)
