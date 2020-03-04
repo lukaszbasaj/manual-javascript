@@ -39,5 +39,5 @@ Podsumowując:
 
 ## Hoisting `const`
 
-Pamiętajmy, że wynoszona na górę jest tylko deklaracja. A zadeklarowana zmienna 
+Pamiętajmy, że wynoszona na górę jest tylko deklaracja. A zadeklarowana zmienna
 (bez przypisania) ma wartość undefined.
