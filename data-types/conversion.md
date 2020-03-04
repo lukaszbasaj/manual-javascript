@@ -1,4 +1,4 @@
-## Automatyczna konwersja typów
+# Automatyczna konwersja typów
 
 JavaScript nie wymaga od Ciebie abyś deklarował typ zmiennych. Przykładowo możesz
 utworzyć zmienną typu liczbowego o nazwie np. someVar, a następnie przypisać
@@ -9,14 +9,27 @@ let someVar = 10;
 someVar = "to jest napis";
 ```
 
-Z jednej strony jest to fajne, bo upraszcza sprawę. Z drugiej może powodować błędy w bardziej skompilowanych skryptach. Dlatego też w każdym większym języku (np C++) konieczne jest określanie typów danych. Dlatego też powstały dla JavaScript takie nakładki jak TypeScript
+Z jednej strony jest to fajne, bo upraszcza sprawę. Z drugiej może powodować błędy
+w bardziej skompilowanych skryptach. Dlatego też w każdym większym języku (np C++)
+konieczne jest określanie typów danych. Dlatego też powstały dla JavaScript
+takie nakładki jak TypeScript
 
-JavaScript lubi być automatyczny. Tak jest w przypadku operacji na typach prostych i kilku innych momentach (np. w przypadku hoistingu zmiennych czy deklaracji funkcji).
-Ta automatyczność przejawia się tym, że w wielu momentach JavaScript chce nam ułatwić życie automatycznie konwertując danych tym zmiennej na inny. Przykładowo dodając liczbę do stringa, liczba zostanie skonwertowana na string. Podobnie dodając string do tablicy (ale nie pushując do niej) tablica zostanie skonwertowana na string.
+JavaScript lubi być automatyczny. Tak jest w przypadku operacji na typach prostych
+i kilku innych momentach (np. w przypadku `hoistingu` zmiennych czy deklaracji funkcji).
+Ta automatyczność przejawia się tym, że w wielu momentach JavaScript chce nam
+ułatwić życie automatycznie konwertując danych tym zmiennej na inny.
+Przykładowo dodając liczbę do stringa, liczba zostanie skonwertowana na string.
+Podobnie dodając string do tablicy (ale nie pushując do niej) tablica zostanie
+skonwertowana na string.
 
-JavaScript nie jest w stanie dodać do siebie tablic czy obiektów (bo nie robi się tego +, a specjalnymi metodami), ale potrafi dodawać numery czy stringi do siebie. Dlatego podczas operacji często stara się skonwertować "niedodawalne" typy danych na typy, które potrafi dodać - najczęściej są to stringi, ale czasami też numbery czy inne wymagane w danej sytuacji typy danych.
+JavaScript nie jest w stanie dodać do siebie tablic czy obiektów (bo nie robi
+się tego +, a specjalnymi metodami), ale potrafi dodawać numery czy stringi
+do siebie. Dlatego podczas operacji często stara się skonwertować "niedodawalne"
+typy danych na typy, które potrafi dodać - najczęściej są to stringi, ale czasami
+też numbery czy inne wymagane w danej sytuacji typy danych.
 
-Poniżej znajdziej kilka przykładów konwersji, a dalej możesz przeczytać o zasadach, które obowiązują przy konwersji.
+Poniżej znajdziesz kilka przykładów konwersji, a dalej możesz przeczytać o zasadach,
+które obowiązują przy konwersji.
 
 ```js
 !!""           // false
@@ -32,13 +45,17 @@ Poniżej znajdziej kilka przykładów konwersji, a dalej możesz przeczytać o z
 
 ## Manualna konwersja na liczby
 
-Zamiast zdawać na automatyczną konwersję typów przez JavaScript możemy samodzielnie wymusić konwersję typu za pomocą
-w budowanych funkcji `Number()`, `Boolean()`, `String()`, bądź `parseInt()`, `parseFloat()`. Oczywiście często możesz
-się spotkać z praktykami deweloperów, którzy wykorzystują znajomość zasady automatycznych konwersji i konwertują za pomocą
+Zamiast zdawać na automatyczną konwersję typów przez JavaScript możemy
+samodzielnie wymusić konwersję typu za pomocą
+w budowanych funkcji `Number()`, `Boolean()`, `String()`, bądź `parseInt()`,
+`parseFloat()`. Oczywiście często możesz
+się spotkać z praktykami deweloperów, którzy wykorzystują znajomość zasady
+automatycznych konwersji i konwertują za pomocą
 operatorów takich, jak `+`, `!!` w celach krótszego zapisu:
- - `+`  -> `Number()`, 
- - `!!` -> `Boolean()` 
- 
+
+- `+`  -> `Number()`,
+- `!!` -> `Boolean()`
+
 ```js
 Number("1");  // 1    <- konwertuje string na number
 Number(true); // 1    <- konwertuje boolean na number
@@ -51,8 +68,10 @@ parseFloat(str); //parsuje string na liczbę
 
 ## Zasady przy konwersji typów
 
-Zależnie od rodzaju wykonywanej operacji i użytych w niej typach Javascript konwertuje do jednego z typów: `String`, `Number`, `Bolean`.
-Możemy spotkać się konwersją przy użyciu takich operatorów, jak: [logiczny](operators/logical), [arytmetyczny](operators/arithmetics), [prównawczy](operators/comparision) czy [warunkowy](condition-statements/if-else).
+Zależnie od rodzaju wykonywanej operacji i użytych w niej typach Javascript
+konwertuje do jednego z typów: `String`, `Number`, `Boolean`.
+Możemy spotkać się konwersją przy użyciu takich operatorów, jak: [logiczny](operators/logical),
+[arytmetyczny](operators/arithmetics), [porównawczy](operators/comparision) czy [warunkowy](condition-statements/if-else).
 
 ```js
 !!""           // !!Boolean("")   ->   !!false -> false
@@ -62,7 +81,8 @@ Możemy spotkać się konwersją przy użyciu takich operatorów, jak: [logiczny
 1 ? "a" : "b"; // Boolean(1) ? "a" : "b" -> true ? "a" : "b" -> "a"
 ```
 
-Przy próbie konwersji typu złożonego jest wykonywana metoda *toPrmitive* na typie `object`. *toPrmitive* w uproszczeniu wykonuje metodę `valueOf` albo `toString`.
+Przy próbie konwersji typu złożonego jest wykonywana metoda *toPrmitive* na
+typie `object`. *toPrmitive* w uproszczeniu wykonuje metodę `valueOf` albo `toString`.
 Nie dotyczy przy konwersji użyciu operatora logicznego i warunkowego.
 
 ```js
@@ -98,6 +118,7 @@ const b = {
 ```
 
 ### Konwersja przy użyciu operatora warunkowego (?)
+
 Oczywiście zasady są takie same przy instrukcji warunkowej: if, switch.
 
 ```js
@@ -149,7 +170,7 @@ Symbol() ? "a" : "b"  // Boolean(Symbol()) ? "a" : "b" -> true ? "a" : "b" -> "a
 [1,2,3] + {}  // 1,2,3[object Object]
 ```
 
-### Konwersja przy użyciu operatora prównawczego (==)
+### Konwersja przy użyciu operatora porównawczego (==)
 
 porównanie z sobą wartości pustych zwraca `true`
 
@@ -160,35 +181,45 @@ null == null           // true
 ```
 
 porównanie wszystkiego innego z wartościami pustymi zwraca `false`
+
 ```js
 null == *      // false
 undefined == * // false
 ```
 
 wartość `NaN` nigdy z sobą nie są równe
+
 ```js
 NaN == NaN    // false
 NaN === NaN   // false
 ```
- 
-Przy luźnym porównaniu `string` do `number`. Wartość o type `string` zostanie z konwertowana za pomocą operacji `Number()`.
+
+Przy luźnym porównaniu `string` do `number`. Wartość o type `string` zostanie z konwertowana
+za pomocą operacji `Number()`.
+
 ```js
 "" == 0     // Number("") == 0    -> 0 == 0   -> true
 "0" == 0    // Number("0") == 0   -> 0 == 0   -> true
 "1" == 0    // Number("1") == 1   -> 1 == 0   -> false
 "abc" == 0  // Number("abc") == 0 -> NaN == 0 -> false
-``` 
-  
-Natomiast przy porównaniu jakiegolowiek wartości typu prostego do wartości typu `Bolean`. Obydwa typy przed porównaniem są konwertowane do number za pomocą operacji `Number()`
+```
+
+Natomiast przy porównaniu jakiegokolwiek wartości typu prostego do wartości typu
+`Boolean`. Obydwa typy przed porównaniem są konwertowane do number za pomocą operacji
+`Number()`
+
  ```js
 false == 0     // Number(false) == 0 -> 0 == 0 -> true
 true == 0      // Number(true) == 0  -> 1 == 0 -> false
 
 false == ""    // Number(false) == Number("")    -> 0 == 0   -> false
 'true' == true // Number('true') == Number(true) -> NaN == 1 -> false
-``` 
-   
-Przy porównaniu typu prostego `Bolean`, `String` bądź `Number` z `object` zostanie porównanany typu prosty z wynikiem wykonania *toPrmitive*.  
+
+```
+
+Przy porównaniu typu prostego `Boolean`, `String` bądź `Number` z `object` zostanie
+porównany typu prosty z wynikiem wykonania *toPrmitive*.
+
 ```js
 [] == ""       // [].valueOf() == ""  -> [].toString() == ""  -> "" == ""  -> true
 [] == "0"      // [].valueOf() == "0" -> [].toString() == "0" -> "" == "0" -> false
@@ -211,41 +242,42 @@ const b = {
     return "1";
   }
 }
-  
+
 b == 1       // b.valueOf() == 1    -> "1" == 1    -> Number("1") == 1 -> 1 == 1 -> true
 b == true    // b.valueOf() == true -> "1" == true -> Number("1") == Number(true) -> 1 == 1 -> true
 
-``` 
+```
 
-# Truthy/falsy
+## Truthy/falsy
 
-Możesz się spotkać takim pojęciem jak `false values` czy `true values`. Za tymi pojęciami kryje się lista wartości, które
+Możesz się spotkać takim pojęciem jak `false values` czy `true values`.
+Za tymi pojęciami kryje się lista wartości, które
 zwracają `true` albo `false` przy konwersji za pomocą w budowanej funkcji `Boolean()`.
 
 **Poniższe wartości są zawsze 'fałszywe':**
 
-* false
-* 0 (zero)
-* '' or "" (posty string)
-* null
-* undefined
-* NaN
+- false
+- 0 (zero)
+- '' or "" (posty string)
+- null
+- undefined
+- NaN
 
 Oraz:
 
-* document.all
+- document.all
 
 **Każde z pozostałych wartości są zawsze 'prawdziwe', włączając poniższe:**
 
-* '0' (string z wartością zero)
-* 'false' (string z wyrazem “false”)
-* [] (pusta tablica)
-* {} (pusty obiekt)
-* function(){} ('pusta' funkcja)
+- '0' (string z wartością zero)
+- 'false' (string z wyrazem “false”)
+- [] (pusta tablica)
+- {} (pusty obiekt)
+- function(){} ('pusta' funkcja)
 
 ## Źródła
-* [Mozilla Developer Network](https://developer.mozilla.org)
-* [JavaScript Equality Table](https://dorey.github.io/JavaScript-Equality-Table/)
-* [Understanding JavaScript Truthy and Falsy](https://stackoverflow.com/questions/35642809/understanding-javascript-truthy-and-falsy)
-* [Developer - Falsy](https://html.spec.whatwg.org/multipage/obsolete.html#dom-document-all)
 
+- [Mozilla Developer Network](https://developer.mozilla.org)
+- [JavaScript Equality Table](https://dorey.github.io/JavaScript-Equality-Table/)
+- [Understanding JavaScript Truthy and Falsy](https://stackoverflow.com/questions/35642809/understanding-javascript-truthy-and-falsy)
+- [Developer - Falsy](https://html.spec.whatwg.org/multipage/obsolete.html#dom-document-all)
