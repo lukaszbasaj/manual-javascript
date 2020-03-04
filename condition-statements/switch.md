@@ -1,4 +1,3 @@
-> Instrukcja `switch`
+# Instrukcja `switch`
 
 ![switch](switch.png)
-
