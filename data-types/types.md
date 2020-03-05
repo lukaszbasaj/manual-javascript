@@ -43,29 +43,31 @@ console.log( typeof nul ); //"object" hmm?
 ```
 
 ## undefined
+
 `undefined` jest zmienną o zasięgu globalnym o tej samej nazwie i wartości.
- 
+
 ```js
 console.log(undefined);    // undefined
 ```
 
 Przypisanie innej wartości do zmiennej `undefined` nie powoduje zmiany.
- 
+
 ```js
-undefined = 1                  
+undefined = 1
 console.log(undefined);    // undefined
 ```
 
-Można jednak przysłonić wartość zmiennej `undefined`. Każde przypisanie wtedy `undefined` będzie zwracać nową wartość.
-`undefined` nie znajduje się na [liscie słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych),
-stąd możliwośc przypisania w odróżnieniu do typu `null`, gdzie nie jest to możliwe.
-
+Można jednak przysłonić wartość zmiennej `undefined`. Każde przypisanie wtedy
+`undefined` będzie zwracać nową wartość.
+`undefined` nie znajduje się na [liście słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych),
+stąd możliwość przypisania w odróżnieniu do typu `null`, gdzie nie jest to możliwe.
 
 ```js
-const undefined = 1                  
+const undefined = 1
 console.log(undefined);    // 1
-```  
-### Kiedy mamy do czynienia z `undefined`:  
+```
+
+### Kiedy mamy do czynienia z `undefined`
 
 ```js
 // Przy dostępie do nie przysłoniętej wartości `undefined`:
@@ -97,9 +99,9 @@ function showNames(name,lastname){return name + ", " + lastname;}
 showNames("Jan")          // "Jan, undefined"
 ```
 
-
 ## null
-Jest wykorzystywany do deklaracji końca łańcucha prototypów. 
+
+Jest wykorzystywany do deklaracji końca łańcucha prototypów.
 
 ```js
 const object = {
@@ -112,10 +114,12 @@ object.hasOwnProperty("name") // true
 
 object.__proto__ = null;
 object.hasOwnProperty("name") // throw error: object.hasOwnProperty is not a function
-```  
+```
 
-Wartość `null` w przeciwieństwie do `undefined` wystąpuje jedynie po przypisaniu. Nazwa typu jest zastrzeżona w 
-[liscie słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych). Ciekawostką jest, że `typeof null`
+Wartość `null` w przeciwieństwie do `undefined` wystąpuje jedynie po przypisaniu.
+Nazwa typu jest zastrzeżona w
+[liście słów zarezerwowanych](data-types/variables.md?id=lista-słów-zarezerwowanych).
+Ciekawostką jest, że `typeof null`
 zwraca "object", co nazywane jest często błędem języka.
 
 Źródło: [The history of “typeof null”](https://2ality.com/2013/10/typeof-null.html)
