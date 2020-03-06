@@ -2,14 +2,21 @@
 
 ![var](var.png )
 
-Deklaracje `var`, gdziekolwiek występują, są przetwarzane przed wykonaniem jakiegokolwiek kodu. Nazywa się to podnoszeniem (*hoisting*) i omówimy to zjawisko poniżej.
+Deklaracje `var`, gdziekolwiek występują, są przetwarzane przed wykonaniem
+jakiegokolwiek kodu. Nazywa się to podnoszeniem (*hoisting*)
+i omówimy to zjawisko poniżej.
 
-Zakres zmiennej zadeklarowanej za pomocą `var` jest bieżącym kontekstem wykonania, który jest funkcją zamykającą lub, w przypadku zmiennych zadeklarowanych poza jakąkolwiek funkcją, globalną.
+Zakres zmiennej zadeklarowanej za pomocą `var` jest bieżącym kontekstem wykonania,
+który jest funkcją zamykającą lub, w przypadku zmiennych zadeklarowanych poza
+jakąkolwiek funkcją, globalną.
 
-Jeśli ponownie zadeklarujesz zmienną JavaScript, nie straci ona swojej wartości. Przypisanie wartości do niezadeklarowanej zmiennej domyślnie tworzy ją jako zmienną globalną (staje się własnością obiektu globalnego) podczas przypisywania.
+Jeśli ponownie zadeklarujesz zmienną JavaScript, nie straci ona swojej wartości.
+Przypisanie wartości do niezadeklarowanej zmiennej domyślnie tworzy ją jako
+zmienną globalną (staje się własnością obiektu globalnego) podczas przypisywania.
 Różnice między zmiennymi zadeklarowanymi i niezadeklarowanymi to:
 
-1. Zmienne zadeklarowane są ograniczone w kontekście wykonania, w którym zostały zadeklarowane. Niezadeklarowane zmienne są zawsze globalne.
+1. Zmienne zadeklarowane są ograniczone w kontekście wykonania, w którym zostały
+zadeklarowane. Niezadeklarowane zmienne są zawsze globalne.
 
     ```js
     function x() {
@@ -50,11 +57,19 @@ Różnice między zmiennymi zadeklarowanymi i niezadeklarowanymi to:
     // The 'b' property was deleted and no longer exists.
     ```
 
-Z powodu tych trzech różnic niezadeklarowanie zmiennych najprawdopodobniej doprowadzi do nieoczekiwanych wyników. Dlatego zaleca się, aby zawsze deklarować zmienne, niezależnie od tego, czy mają one funkcję, czy zasięg globalny. W trybie ścisłym (`strict mode`) ECMAScript 5 przypisanie do niezadeklarowanej zmiennej powoduje błąd.
+Z powodu tych trzech różnic niezadeklarowanie zmiennych najprawdopodobniej doprowadzi
+do nieoczekiwanych wyników. Dlatego zaleca się, aby zawsze deklarować zmienne,
+niezależnie od tego, czy mają one funkcję, czy zasięg globalny. W trybie ścisłym
+(`strict mode`) ECMAScript 5 przypisanie do niezadeklarowanej zmiennej powoduje błąd.
 
 ## Hoisting
 
-Ponieważ deklaracje zmiennych (i ogólnie deklaracje) są przetwarzane przed wykonaniem jakiegokolwiek kodu, zadeklarowanie zmiennej w dowolnym miejscu w kodzie jest równoważne zadeklarowaniu jej na górze. Oznacza to również, że zmienna może wydawać się używana, zanim zostanie zadeklarowana. To zachowanie nazywa się „podnoszeniem”, ponieważ wydaje się, że deklaracja zmiennej jest przenoszona na górę funkcji lub do kodu globalnego.
+Ponieważ deklaracje zmiennych (i ogólnie deklaracje) są przetwarzane przed wykonaniem
+jakiegokolwiek kodu, zadeklarowanie zmiennej w dowolnym miejscu w kodzie jest
+równoważne zadeklarowaniu jej na górze. Oznacza to również, że zmienna może
+wydawać się używana, zanim zostanie zadeklarowana. To zachowanie nazywa się
+„podnoszeniem”, ponieważ wydaje się, że deklaracja zmiennej jest przenoszona na
+górę funkcji lub do kodu globalnego.
 
 ```js
 bla = 2;
@@ -66,7 +81,12 @@ var bla;
 bla = 2;
 ```
 
-Z tego powodu zaleca się, aby zawsze deklarować zmienne u góry zakresu (u góry kodu globalnego i u góry kodu funkcji), aby było jasne, które zmienne mają zakres funkcji (lokalny), a które są rozwiązywane w łańcuchu zasięgu. Należy zauważyć, że podnoszenie wpłynie na deklarację zmiennej, ale nie na inicjalizację jej wartości. Wartość zostanie rzeczywiście przypisana po osiągnięciu instrukcji przypisania:
+Z tego powodu zaleca się, aby zawsze deklarować zmienne u góry zakresu
+(u góry kodu globalnego i u góry kodu funkcji), aby było jasne, które zmienne
+mają zakres funkcji (lokalny), a które są rozwiązywane w łańcuchu zasięgu.
+Należy zauważyć, że podnoszenie wpłynie na deklarację zmiennej, ale nie na
+inicjalizację jej wartości. Wartość zostanie rzeczywiście przypisana po
+osiągnięciu instrukcji przypisania:
 
 ```js
 function do_something() {
