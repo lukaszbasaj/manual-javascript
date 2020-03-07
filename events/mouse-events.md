@@ -1,9 +1,10 @@
-> Zdarzenia związane z kliknięciem
+# Zdarzenia związane z kliknięciem
 
-Javascript udostępnia nam kilka gotowych metod dla elementów na stronie, które w prosty sposób pozwalają wywoływać dane eventy - tak jakby to realnie zrobił użytkownik:
+Javascript udostępnia nam kilka gotowych metod dla elementów na stronie, które
+w prosty sposób pozwalają wywoływać dane eventy - tak jakby to realnie zrobił użytkownik:
 
 Przykładowe zdarzenia:
-
+<!-- markdownlint-disable MD013 -->
 | Name          | Description                     |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
 | click             | A pointing device button (ANY button; soon to be primary button only) has been pressed and released on an element. |
