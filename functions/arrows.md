@@ -58,7 +58,7 @@ let sayHi = () => alert("Hello!");
 sayHi();
 ```
 
-W powyższych przykładach pobrano argumenty z lewej strony => i przekazano je
+W powyższych przykładach pobrano argumenty z lewej strony `=>` i przekazano je
 do wyrażenia po prawej stronie. Czasami potrzebujemy czegoś nieco bardziej złożonego,
 na przykład wielu wyrażeń lub instrukcji. Jest to również możliwe, ale powinniśmy
 je zamknąć w nawiasach klamrowych. Następnie używamy `return` w ich obrębie.
