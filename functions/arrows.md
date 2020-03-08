@@ -1,10 +1,10 @@
 # Funkcje strzałkowe
 
-Funkcja strzałkowa ma 2 kluczowe zadania: skrócenie zapisu, 
+Funkcja strzałkowa ma 2 kluczowe zadania: skrócenie zapisu,
 oraz nie zmieniane kontekstu `this`.
 
 Jest jeszcze jedna bardzo prosta i zwięzła składnia do tworzenia funkcji, często
-lepsza niż Wyrażenia funkcji. Nazywa się to „funkcjami strzałek”, 
+lepsza niż Wyrażenia funkcji. Nazywa się to „funkcjami strzałek”,
 ponieważ wygląda to tak:
 
 ```js
