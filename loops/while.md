@@ -1,6 +1,8 @@
-> Pętla `while`
+# Pętla `while`
 
-Instrukcja `while` tworzy pętlę, która wykonuje określoną instrukcję, o ile warunek testu zostanie oceniony jako `true`. Warunek jest oceniany przed wykonaniem instrukcji.
+Instrukcja `while` tworzy pętlę, która wykonuje określoną instrukcję,
+o ile warunek testu zostanie oceniony jako `true`.
+Warunek jest oceniany przed wykonaniem instrukcji.
 
 ```js
 var n = 0;
