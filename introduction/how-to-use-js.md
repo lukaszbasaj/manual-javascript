@@ -22,7 +22,11 @@ Skrypty możemy wstawiać na stronę na 2 sposoby:
     </html>
     ```
 
-- drugim sposobem wstawiania skryptu jest dołączenie zewnętrznego pliku, który zawiera nasz kod. Deklaracja skryptu jest podobna, jak przy wstawianiu w treści strony, jednak znacznik `<script>` zawiera dodatkowy atrybut **„src”** z przypisaną ścieżką dostępu do pliku. Ładowany plik ma rozszerzenie ***.js** i powinien zawierać kompletny skrypt bez znaczników `<script>`  i `</script>`.
+- drugim sposobem wstawiania skryptu jest dołączenie zewnętrznego pliku, który
+zawiera nasz kod. Deklaracja skryptu jest podobna, jak przy wstawianiu w treści strony,
+jednak znacznik `<script>` zawiera dodatkowy atrybut **„src”** z przypisaną ścieżką
+dostępu do pliku. Ładowany plik ma rozszerzenie ***.js** i powinien zawierać kompletny
+skrypt bez znaczników `<script>`  i `</script>`.
 
     ```html
     <!DOCTYPE html>
@@ -42,25 +46,33 @@ Skrypty możemy wstawiać na stronę na 2 sposoby:
 
 ## Która metoda jest lepsza?
 
-Wszystko zależy od tego, jaki chcemy osiągnąć cel. Powszechną praktyką jest dołączanie zewnętrzengo pliku.
+Wszystko zależy od tego, jaki chcemy osiągnąć cel. Powszechną praktyką jest
+dołączanie zewnętrznego pliku.
 
-Do niedawna, gdy protokół **HTTP/2** nie był tak powszechny, w celu optymalizacji ilości zapytań wysyłanych przez przeglądarkę do serwerów, jedną z praktyk było umieszczanie kodu JavaScript w pliku html.
+Do niedawna, gdy protokół **HTTP/2** nie był tak powszechny, w celu optymalizacji
+ilości zapytań wysyłanych przez przeglądarkę do serwerów, jedną z praktyk było
+umieszczanie kodu JavaScript w pliku html.
 
 ## Asynchroniczne ładowanie skryptów
 
-Możesz spotkać się z sytuacją, gdy w znaczniku `<script>` jest umieszczony jeden z dwóch dodatkowych atrybutów `async` i `defer`.
+Możesz spotkać się z sytuacją, gdy w znaczniku `<script>` jest umieszczony
+jeden z dwóch dodatkowych atrybutów `async` i `defer`.
 
 ```html
 <script src="..." defer></script>
 <script src="..." async></script>
 ```
 
-Jednym ze sposobów na przyspieszenie wczytywania strony internetowej jest asynchroniczne ładowanie skryptów JavaScript.
+Jednym ze sposobów na przyspieszenie wczytywania strony internetowej jest
+asynchroniczne ładowanie skryptów JavaScript.
 
-Atrybut `async` powoduje, że jeżeli przeglądarka czytając kod strony natrafi na plik ze skryptem zacznie go wczytywać w tle, równocześnie czytając dalszą część kodu strony. Jeżeli cały plik ze skryptem się wczyta, wtedy kod zostanie odpalony.
+Atrybut `async` powoduje, że jeżeli przeglądarka czytając kod strony natrafi na
+plik ze skryptem zacznie go wczytywać w tle, równocześnie czytając dalszą część
+kodu strony. Jeżeli cały plik ze skryptem się wczyta, wtedy kod zostanie odpalony.
 
-Atrybut `defer` działa w miarę podobnie. Plik ze skryptem też będzie wczytywany w tle. Różnica jest taka, że jeżeli przeglądarka wczyta już cały plik ze skryptem, odpali go po załadowaniu całego dokumentu.
-
+Atrybut `defer` działa w miarę podobnie. Plik ze skryptem też będzie wczytywany
+w tle. Różnica jest taka, że jeżeli przeglądarka wczyta już cały plik ze skryptem,
+odpali go po załadowaniu całego dokumentu.
 
 ## Wstawianie skryptów w kodzie HTML
 
@@ -109,3 +121,4 @@ W JavaScript mamy do dyspozycji dwa rodzaje komentarzy:
     ```js
     //komentarz jednolinijkowy
     ```
+    
