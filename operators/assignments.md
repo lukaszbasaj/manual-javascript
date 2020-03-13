@@ -1,6 +1,6 @@
-> Operatory przypisania
+# Operatory przypisania
 
-
+<!-- markdownlint-disable MD013 -->
 | Nazwa                           | Zapis | Znaczenie     |
 |---------------------------------|--------------------|-------------|
 | Przypisanie                      | x = y              | x = y       |
@@ -17,5 +17,5 @@
 | Bitowe przypisanie XOR          | x ^= y             | x = x ^ y   |
 | Bitowe przypisanie OR           | x |= y             | x = x | y   |
 
-
+---
 źródło: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
