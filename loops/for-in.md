@@ -1,7 +1,7 @@
-> Pętla `for..in`
+# Pętla `for..in`
 
-
-Pętla `for...in` iteruje właściwości obiektu i wykonuje ciało pętli jeden raz dla każdej wyliczalnej właściwości obiektu.
+Pętla `for...in` iteruje właściwości obiektu i wykonuje ciało pętli jeden raz
+dla każdej wyliczalnej właściwości obiektu.
 
 ```js
 const obj = {a: 1, b: 2, c: 3};
