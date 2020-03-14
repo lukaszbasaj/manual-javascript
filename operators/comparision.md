@@ -1,8 +1,9 @@
-> **Operatory porównania**
+# **Operatory porównania**
 
-| Operator | Opis | Przykłady powrotu <sup>true1</sup>                      |
+<!-- markdownlint-disable MD013 -->
+| Operator | Opis | Przykłady powrotu `true`                    |
 |----------|------|-------------------------|
-|Jest równe (==) |	Zwraca true, jeśli argumenty są równe. Jeśli dwa argumenty nie są tego samego typu, JavaScript próbuje konwertować argument do odpowiedniego typu dla porównania. | `3 == var1`; `"3" == var1`; `3 == '3'`;|
+|Jest równe (==) |Zwraca true, jeśli argumenty są równe. Jeśli dwa argumenty nie są tego samego typu, JavaScript próbuje konwertować argument do odpowiedniego typu dla porównania. | `3 == var1`; `"3" == var1`; `3 == '3'`;|
 |Nie jest równe (!=)|Zwraca true, jeśli argumenty nie są równe. Jeśli dwa argumenty nie są tego samego typu, JavaScript próbuje konwertować argument do odpowiedniego typu dla porównania.|`var1 != 4` `var2 != "3"`|
 |Ściśle równe (===)|Zwraca true, jeśli argumenty są równe i są tego samego typu.|`3 === var1`|
 |Ściśle nie jest równe (!==)|Zwraca true, jeśli argumenty nie są równe i/lub nie są tego samego typu.|`var1 !== "3"`` 3 !== '3'`|
@@ -11,12 +12,7 @@
 |Jest mniejsze (<)|	Zwraca true, jeśli lewy argument jest mniejszy niż prawy argument.|`var1 < var2`|
 |Jest mniejsze lub równe (<=)|Zwraca true, jeśli lewy argument jest mniejszy lub równy prawemu argum`var2 <= 5`|
 
-
-
-
-
-
-
+--- 
 [JavaScript Equality Table](https://dorey.github.io/JavaScript-Equality-Table/)
 
 
