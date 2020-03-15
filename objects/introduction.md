@@ -1,10 +1,10 @@
-> **Czym są obiekty**
+# **Czym są obiekty**
 
 Obiekty w JavaScript są najważniejszym typem danych i stanowią
 elementy składowe języka.
 Obiekty różnią się znacznie od prymitywnych typów
-danych JavaScript (liczba, łańcuch, wartość logiczna, null, niezdefiniowany i
-symbol) w tym sensie, że chociaż prymitywne typy danych przechowują po
+danych JavaScript (`number`, `string`, `boolean`, `null`, `undefined` i
+`symbol`) w tym sensie, że chociaż prymitywne typy danych przechowują po
 jednej wartości (w zależności od ich typów), to:
 
 - obiekty są bardziej złożone i każdy obiekt może zawierać dowolną kombinację 
