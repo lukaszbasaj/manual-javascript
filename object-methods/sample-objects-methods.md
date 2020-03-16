@@ -1,7 +1,10 @@
-> Obiekt Math
+# Obiekt Math
 
-W przeciwieństwie do innych obiektów globalnych, `Math` nie jest konstruktorem. Wszystkie właściwości i metody matematyczne są statyczne. Odwołujesz się do stałej pi jako `Math.PI` i wywołujesz funkcję sinus jako `Math.sin(x)`, gdzie `x` jest argumentem metody. Stałe są definiowane z pełną precyzją liczb rzeczywistych w JavaScript.
-
+W przeciwieństwie do innych obiektów globalnych, `Math` nie jest konstruktorem.
+Wszystkie właściwości i metody matematyczne są statyczne.
+Odwołujesz się do stałej pi jako `Math.PI` i wywołujesz funkcję
+sinus jako `Math.sin(x)`, gdzie `x` jest argumentem metody.
+Stałe są definiowane z pełną precyzją liczb rzeczywistych w JavaScript.
 
 Przykładowe metody `Math`:
 
@@ -15,7 +18,8 @@ Przykładowe metody `Math`:
 - `Math.sqrt(x)` - Zwraca dodatni pierwiastek kwadratowy z liczby.
 
 Przykłady wykorzystania:
-```
+
+```js
 const var1 = 56.5;
 const var2 = 74.3;
 
