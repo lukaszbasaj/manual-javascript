@@ -3,7 +3,7 @@
 Javascript udostępnia nam gotowy obiekt Date() który umożliwia nam w łatwy
 sposób manipulowanie czasem oraz datami.
 
-Aby wyświetlić na ekranie bieżącą datę jaka jest ustawiona w systemie 
+Aby wyświetlić na ekranie bieżącą datę jaka jest ustawiona w systemie
 klienta musimy utworzyć nowy obiekt:
 
 ```js
@@ -11,7 +11,7 @@ const currentDate = new Date();
 console.log(currentDate);
 ```
 
-Podstawowe metody za pomocą których możemy w łatwy sposób 
+Podstawowe metody za pomocą których możemy w łatwy sposób
 formatować wygląd daty (najczęściej używane):
 
 <!-- markdownlint-disable MD013 -->
