@@ -57,7 +57,6 @@
     + [Document Object Model](working-with-DOM/dom.md)
     + [Metody dostępu do DOM](working-with-DOM/searching-elements.md)
     + [Praca z elementami DOM](working-with-DOM/creating-elements.md)
-    + [Poruszanie się po drzewie DOM](working-with-DOM/traversing-DOM.md)
     + [🛠 Ćwiczenia](working-with-DOM/practice.md)
 * Zdarzenia
     + [Nasłuchiwanie zdarzeń](events/events.md)
