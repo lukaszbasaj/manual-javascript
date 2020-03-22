@@ -1,8 +1,11 @@
-> Wyszukiwanie elementów DOM
+# Wyszukiwanie elementów DOM
 
-Drzewo DOM składa się z obiektów zwanych węzłami. Istnieje wiele różnych typów węzłów, ale najczęściej będziesz pracować z węzłami elementów (elementy HTML), węzłami tekstowymi (dowolna treść tekstowa) i węzłami komentarzy (kod komentowany). Obiekt `document` jest własnym węzłem, który znajduje się w katalogu głównym.
+Drzewo DOM składa się z obiektów zwanych węzłami. Istnieje wiele różnych typów
+węzłów, ale najczęściej będziesz pracować z węzłami elementów (elementy HTML),
+węzłami tekstowymi (dowolna treść tekstowa) i węzłami komentarzy (kod komentowany).
+Obiekt `document` jest własnym węzłem, który znajduje się w katalogu głównym.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,10 +19,10 @@ Drzewo DOM składa się z obiektów zwanych węzłami. Istnieje wiele różnych 
 </html>
 ```
 
-**Dostęp do elementów DOM**
+## Dostęp do elementów DOM
 
-Aby działać z elementami strony, musimy je wcześniej w jakiś sposób znaleźć i pobrać - do tego celu wykorzystamy kilka metod wymienionych poniżej:
-
+Aby działać z elementami strony, musimy je wcześniej w jakiś sposób
+znaleźć i pobrać - do tego celu wykorzystamy kilka metod wymienionych poniżej:
 
 | Czego szukamy              | Składnia selektora  | Metoda                  |
 |-------------------|-----------------|--------------------------|
@@ -28,4 +31,3 @@ Aby działać z elementami strony, musimy je wcześniej w jakiś sposób znaleź
 | Tag               | demo            | getElementsByTagName()   |
 | Selector (single) |                 | querySelector()          |
 | Selector (all)    |                 | querySelectorAll()       |
-
