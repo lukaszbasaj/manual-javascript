@@ -1,4 +1,4 @@
-# Welcome to Manual :: JavaScript 👋  
+# Welcome to Manual :: JavaScript 👋
 <!-- markdownlint-disable MD013 -->
 [![buddy pipeline](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272/badge.svg?token=dda2f0dad3f9112d835f21de27a06d6b14da50f3e7267c4e44eab94300b5ece6 "buddy pipeline")](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272)
 ![travis](https://travis-ci.com/lukaszbasaj/manual-javascript.svg?branch=master)
