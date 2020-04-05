@@ -125,9 +125,9 @@ Oczywiście zasady są takie same przy instrukcji warunkowej: if, switch.
 0 ? "a" : "b"         // Boolean(0) ? "a" : "b" -> false ? "a" : "b" -> "b"
 1 ? "a" : "b"         // Boolean(1) ? "a" : "b" -> true ? "a" : "b" -> "a"
 
-"" ? "a" : "b"        // Boolean("")     ? "a" : "b" -> false ? "a" : "b" -> "b"
-"true" ? "a" : "b"    // Boolean("true") ? "a" : "b" -> true ? "a" : "b" -> "a"
-"false" ? "a" : "b"   // Boolean("true") ? "a" : "b" -> true ? "a" : "b" -> "a"
+"" ? "a" : "b"        // Boolean("")      ? "a" : "b" -> false ? "a" : "b" -> "b"
+"true" ? "a" : "b"    // Boolean("true")  ? "a" : "b" -> true  ? "a" : "b" -> "a"
+"false" ? "a" : "b"   // Boolean("false") ? "a" : "b" -> true  ? "a" : "b" -> "a"
 
 null ? "a" : "b"      // Boolean(null)      ? "a" : "b" -> false ? "a" : "b" -> "b"
 undefined ? "a" : "b" // Boolean(undefined) ? "a" : "b" -> false ? "a" : "b" -> "b"
