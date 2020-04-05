@@ -1,6 +1,7 @@
-# Welcome to Manual :: JavaScript 👋
+# Welcome to Manual :: JavaScript 👋  
 <!-- markdownlint-disable MD013 -->
-[![buddy pipeline](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272/badge.svg?token=065ef370272ce3784a747af5fbd7814b4594a70cf2b796212a37335fc1f9b6ab "buddy pipeline")](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272)
+[![buddy pipeline](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272/badge.svg?token=dda2f0dad3f9112d835f21de27a06d6b14da50f3e7267c4e44eab94300b5ece6 "buddy pipeline")](https://app.buddy.works/lbasaj/manual-javascript/pipelines/pipeline/213272)
+![travis](https://img.shields.io/travis/lukaszbasaj/manual-javascript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lukaszbasaj/manual-javascript/blob/master/LICENSE.md)
 [![Twitter: basajlukasz](https://img.shields.io/twitter/follow/basajlukasz.svg?style=social)](https://twitter.com/basajlukasz)
 
