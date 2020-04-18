@@ -20,6 +20,7 @@
     + [Przypisania](operators/assignments.md)
     + [Porównania](operators/comparision.md)
     + [Logiczne](operators/logical.md)
+    + [Spread Operator](modern-features/operator-spread.md)
 * Obiekty
     + [Czym są obiekty?](objects/introduction.md)
     + [Tworzenie obiektów](objects/create-object.md)
