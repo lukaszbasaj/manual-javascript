@@ -61,7 +61,7 @@ You can also take a look at the [contributing guide](https://github.com/lukaszba
 - If you're looking for a place to modify please check in files structure. 
  For example, if you want to modify list of reserved words in section `variables.md`
  just find this file and do your changes.
-- If you need to add new file just do this in proper localization and make sure 
+- If you need to add new file just do this in a proper localization and make sure 
  you also add a reference to the `_sidebar.md`
 
 ## Author
