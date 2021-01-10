@@ -194,7 +194,7 @@ NaN == NaN    // false
 NaN === NaN   // false
 ```
 
-Przy luźnym porównaniu `string` do `number`. Wartość o type `string` zostanie z konwertowana
+Przy luźnym porównaniu `string` do `number`. Wartość o typie `string` zostanie z konwertowana
 za pomocą operacji `Number()`.
 
 ```js
@@ -258,7 +258,7 @@ zwracają `true` albo `false` przy konwersji za pomocą w budowanej funkcji `Boo
 
 - false
 - 0 (zero)
-- '' or "" (posty string)
+- '' or "" (pusty string)
 - null
 - undefined
 - NaN
